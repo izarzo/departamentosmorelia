@@ -87,6 +87,9 @@
                 $msnr.imagesLoaded().progress(function() {
                     $msnr.masonry('layout');
                 });
+                document.addEventListener('lazyloaded', function(e){
+                    $msnr.masonry('layout');
+                });
             });
         }
     };
